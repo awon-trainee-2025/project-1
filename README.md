@@ -1,48 +1,109 @@
-# Flutter App Design & Implementation
+# Mulabbi
 
-## Overview
-In this group project, you will design and implement a different app of your choice using Flutter. This project is an opportunity for you to showcase your creativity and apply various Flutter concepts and widgets to create a unique and engaging user experience.
+an application to help pilgrims detects their nusk step by step
 
-## Project proposal:
-1. **Application for tourism**
-2. **Workspace booking app**
-3. **Delivery application**
-4. **Transportation application**
-5. **Online courses application**
+## What to expect from the the readme ?
 
-You are required to implement at least **five different UIs** and use the following mandatory concepts:
+- The Motive behind the project
+- The Technologies used in the project
+- Guideline to run the application within your enviroment
 
-## Mandatory Requirements
-1. **Clean structure folders/files**: You must to divide the projects into folders/files.
-2. **using CRUD system**: Create new data (insert), Read all data, Update data, Delete data.
+| **_Content_**                  | Reference         |
+| ------------------------------ | ----------------- |
+| Motivation Behind the project  | Motivation [^1]   |
+| Core Features                  | Features [^2]     |
+| Technologies \*\*\*\*          | Technologies [^3] |
+| External Packages              | ExtPackages[^4]   |
+| Data Sources                   | Data Sources[^5]  |
+| Running applciation Guidelines | Guidelines [^6]   |
 
-## Bonus Points
-- **Another packages**: Use another packages other than that we worked with.
-- **Different application idea**: Design and implementation another project idea. 
+---
 
-## Guidelines
-- This is a **group project**; each group is expected to work independently.
-- You are encouraged to explore and demonstrate your creativity. Your design and implementation should reflect your unique vision and skills.
+[^1]: Motivation
 
-## Submission Requirements
-- **Screenshots/Videos**: Include clear screenshots or a short video of your project demonstrating its key features and UI.
-- **Documented README File**: Your project should include a README file that clearly describes:
-  - The purpose and features of your app.
-  - The widgets and external packages used.
-  - Instructions for running the app.
-  - Any additional notes or explanations about your design choices.
+## Motivation
+
+> <span >Many pilgrims came for the **FIRST** time to perform their Nusks but they don't know how to follow or how to perform their nusks</span>
+
+### <span style="color:green;">**_Mulabbi_**</span> is is a mobile application design to help, guide, and tracks the pilgrims nusks step by step.
+
+`But There's more!`
+
+- **Centralized** most things the pilgrims need
+- **Modern Design** with emphsize on easy navigation
+- **Security and Privacy** where it doesn't violate the pilgrims's privacy and manipulate his personal information
+- **Data Synchronization** ensures that the pilgrims's progress in his Nusks is maintained and provides him with a continuous and secure experience on all his devices 
+
+---
+
+[^2]: Features
+
+## Features
+
+- Prayers time built-in
+- Library of Adeiyah
+- Nusk detection step by step
+- View history of prevoius nusks
+- Notification
+- Roadmap
+- profile management
+- Support multiple languages (arabic/english) <span style="color:red; font-size:10px;">for now</span>
+
+### Toward the future
+
+- Crowd Detection
+- Local Data Management (offline)
+- AI Chat helper
+- and much more !!!
+
+[^3]: Technologies
+
+## Technologies
+
+| Technology      | Type                 | Purpose                                                                                                                                                                                   |
+| --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Flutter         | Programming Language | The core of the project                                       |
+| Supabase        | Multipurpose         | <ol><li>Database</li><li>Api</li><li>Authentecation</li></ol> |
+| Aladhan         | API                  | Getting prayers time [API Link](https://api.aladhan.com/v1/timingsByAddress/${date}?address=Makkah%2C+Saudi+Arabia&method=4&shafaq=general&latitudeAdjustmentMethod=1&calendarMethod=UAQ) |
+| Getx            | Package              | <ol><li>State management</li><li>Routing</li><li>Storage</li><li>Data Synchronization</li></ol> |
+
+[^4]: ExternalPackages
+## External Packages
+
+| Packege                     | Link                                                           | Purpose                                                       |
+| --------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- |
+| introduction_screen         | [source](https://pub.dev/packages/introduction_screen)         | onboarding                                                    |
+| flutter_native_splash       | [source](https://pub.dev/packages/flutter_native_splash)       | splash screen                                                 |
+| pinput                      | [source](https://pub.dev/packages/pinput)                      | auth otp input                                                |
+| supabase_flutter            | [source](https://pub.dev/packages/supabase_flutter)            | <ul><li>Database</li><li>Api</li><li>Authentecation</li></ul> |
+| getX                        | [source](https://pub.dev/packages/get)                         | State management                                              |
+| Dio                         | [source](https://pub.dev/packages/dio)                         | Networking                                                    |
+| flutter_local_notifications | [source](https://pub.dev/packages/flutter_local_notifications) | Notification                                                  |
+| Youtube Player              | [source](https://pub.dev/packages/youtube_player_flutter)      | Play Live broadcast of Al Haramain in the app                 |
 
 
-## Resources
-- **Widgets Documentation & Examples**: [Material Design Components](https://m3.material.io/components/badges/overview)
-- **External UI Packages**: [Flutter Gems](https://fluttergems.dev/)
-- **Color Palettes**: [Color Hunt](https://colorhunt.co/)
-- **Design Inspiration**: Figma Community, Pinterest, Dribbble, Mobbin
+[^5]: DataSources
+## Data Sources
 
-## Deadline
-- **Submission Deadline**: 16 June, 9:00 AM
+| Data Source | Link                                                                                                                                                                 | Purpose              |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Aladhan     | [API Link](https://api.aladhan.com/v1/timingsByAddress/${date}?address=Makkah%2C+Saudi+Arabia&method=4&shafaq=general&latitudeAdjustmentMethod=1&calendarMethod=UAQ) | Getting prayers time |
+| Zad Content | [API Link](https://mulabbi-api.vercel.app/api/contents)                                                                                                              | Zad content          |
+| Adeiyah     | [API Link](https://68297d8b6075e87073a69d31.mockapi.io/duas) `There's local verison`                                                                                 | Adeiyah              |
 
-## Submission
-Ensure that your project meets all the mandatory requirements. Submit your project files along with a brief documentation describing the features and functionalities you've implemented.
+[^6]: Guidelines
+<p align="center">
+<img width="150" alt="Screen" src="WhatsApp Image 2025-06-23 at 11.33.24 PM (2).jpeg" style="margin-right: 20px;"/>
+<img width="150" alt="Screen" src="WhatsApp Image 2025-06-23 at 11.33.24 PM (1).jpeg" style="margin-right: 20px;" />
+<img width="150" alt="Screen" src="WhatsApp Image 2025-06-23 at 11.33.24 PM.jpeg" style="margin-right: 20px;"/>
+<img width="150" alt="Screen" src="WhatsApp Image 2025-06-23 at 11.33.25 PM (1).jpeg" style="margin-right: 20px;"/>
+<img width="150" alt="Screen" src="WhatsApp Image 2025-06-23 at 11.33.25 PM.jpeg" style="margin-right: 20px;" />
+</p>
 
-Good luck, and have fun creating your app! 🎨📱
+
+
+
+## Running the app within your flutter
+
+<img src="Simulator Screen Recording - iPhone 16 Plus - 2025-06-23 at 23 (online-video-cutter.com).gif" width="300" />
+
